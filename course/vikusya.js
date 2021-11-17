@@ -1,21 +1,105 @@
 "use strict";
 
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+// if(num < 19) {
+//     console.log("Неверно");
+// } else if(num>50) {
+//     console.log("No bro");
+// }else {
+//     console.log("Yes");
+// }
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// (num > 10) ? console.log("Yes") : console.log("Nooo"); тернарный оператор
 
-const a = prompt("Один из последних просмотренных фильмов?", ""),
-      b = prompt("На сколько оцените его?",""),
-      c = prompt("Один из последних просмотренных фильмов?", ""),
-      d = prompt("На сколько оцените его?","");
+// const num = 20;
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+// switch (num) {
+//     case 25:
+//         console.log("Noo");
+//         break;
+//     case 70:
+//         console.log("Eh");
+//         break;
+//     case 20:
+//         console.log("Yeah");
+//         break;
+//     default:
+//         console.log("Olmadi");
+//         break;        
+// }
 
-console.log(personalMovieDB);
+// let numb = 30;
+
+// while (numb < 36) {
+//     console.log(numb);
+//     numb++;
+// }
+
+// do {
+//     console.log(numb);
+//     numb++;
+// }
+// while (numb <= 36);
+
+// for (let i=1; i<8; i++) {
+//     if (i === 6) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+// Функции
+
+// function showFirstMessage () {
+//     console.log ("hello");
+// }
+
+// showFirstMessage ();
+
+// let num = 20;
+
+// function showFirstMessage (text) {
+//     console.log (text);
+//     num = 20;
+// }
+
+// showFirstMessage ('hello');
+// console.log (num);
+
+// function calc (a, b) {
+//     return (a + b);
+// }
+
+// console.log (calc(2, 4));
+// console.log (calc(8, 7));
+
+// function ret() {
+//     let num = 30;
+
+//     return (num);
+// }
+
+// const anotherNum = ret ();
+// console.log (anotherNum);
+
+// let logger = function () {
+//     console.log ('dura');
+// };
+
+// logger ();
+
+// const calc = (a, b) => a + b;
+
+const fruit = "Delicious peach";
+ console.log (fruit.toUpperCase());
+ console.log (fruit.indexOf('peach'));
+ console.log (fruit.slice(10, 15));
+ console.log (fruit.substring(10, 15));
+ console.log (fruit.substr(0, 5));
+ 
+ const num = 12.5;
+
+ console.log (Math.round(num));
+ 
+ const test = "12.2px";
+ console.log (parseInt(test));
+ console.log(parseFloat(test));
